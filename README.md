@@ -86,3 +86,6 @@ _Este repositorio es propiedad de la Legión del Mal. Acceso no autorizado será
 - **Telegram:** [@LegionDelMal](https://t.me/legiondelmal)
 - **Twitter:** [@LegionDelMal](https://twitter.com/LegionDelMal)
 - **Sitio web:** [www.legiondelmal.com](https://www.legiondelmal.com)
+
+
+esta es una prueba para para cerrar un issue desde un commit 
