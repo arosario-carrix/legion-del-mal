@@ -88,4 +88,4 @@ _Este repositorio es propiedad de la Legión del Mal. Acceso no autorizado será
 - **Sitio web:** [www.legiondelmal.com](https://www.legiondelmal.com)
 
 
-esta es una prueba para para cerrar un issue desde un commit 
+Voy a cerrar un issue desde un comentario
