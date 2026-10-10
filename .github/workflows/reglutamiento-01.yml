@@ -8,5 +8,4 @@ jobs:
 
         steps:
             - name: El agente se presenta
-            - run: echo "Hola, soy el agente reclutado"
-            
+              run: echo "Hola, soy el agente reclutado"
