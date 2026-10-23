@@ -9,3 +9,17 @@ jobs:
         steps:
             - name: El agente se presenta
               run: echo "Hola, soy el agente reclutado"
+            - name: Confirmación de reclutamiento
+              run: echo "El agente ha sido reclutado exitosamente"
+            - name: Registro de reclutamiento
+              run: |
+                echo "Registro de reclutamiento completado"
+                echo "Fin del proceso de reclutamiento"
+                echo "nombre clave:" ${{github.actor}}"
+                echo ""
+                echo "Contexto de Github"                
+                echo "nombre clave:" ${{github.actor}}"
+                echo "Repositorio:" ${{github.repository}}"
+                echo "Evento:" ${{github.event_name}}"
+                echo "Actor:" ${{github.actor}}"
+                echo "Ref:" ${{toJson(github)}}"
