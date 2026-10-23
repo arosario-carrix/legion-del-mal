@@ -1,0 +1,16 @@
+name: Control de Calidad
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  control-calidad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verificar el código
+        uses: actions/checkout@v4
+      - name: Ejecutar control de calidad
+        run: |
+          chmod +x ./scripts/control_calidad.sh
+          ./scripts/control_calidad.sh
