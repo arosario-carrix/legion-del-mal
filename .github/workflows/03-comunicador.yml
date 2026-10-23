@@ -30,8 +30,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Imprimir inputs
+      - name: Intalar el trasmisor de la Legion
+        run: sudo apt-get install -y cowsay
+      - name: Comunicar mensaje
         run: |
-          echo "Inputs recibidos:"
           echo "Mensaje del villano: ${{ github.event.inputs.villano }}"
-          echo "Prioridad: ${{ github.event.inputs.priority }}"
+          cowsay "Prioridad: ${{ github.event.inputs.priority }}"
+
