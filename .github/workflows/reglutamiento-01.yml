@@ -18,8 +18,19 @@ jobs:
                 echo "nombre clave:" ${{github.actor}}"
                 echo ""
                 echo "Contexto de Github"                
-                echo "nombre clave:" ${{github.actor}}"
                 echo "Repositorio:" ${{github.repository}}"
                 echo "Evento:" ${{github.event_name}}"
                 echo "Actor:" ${{github.actor}}"
                 echo "Ref:" ${{toJson(github)}}"
+            - name: Capacidad del agente
+              run: |
+                echo "Capacidades detectadas:"
+                echo "Sistema operativo"
+                uname -a
+                echo "Habilidades técnicas detectadas:"
+                node --version
+                git --version
+                python --version
+
+            - name: Finalización del reclutamiento
+              run: echo "El proceso de reclutamiento ha finalizado"
