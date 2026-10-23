@@ -13,6 +13,14 @@ on:
               - 'Hola desde la Legion'
               - 'Mensaje secreto'
               - 'Alerta de villano'
+          priority:
+            description: 'Prioridad del mensaje'
+            required: true
+            type: choice
+            options:
+              - 'Alta'
+              - 'Media'
+              - 'Baja'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,6 +30,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-   
+  
       - uses: actions/checkout@v4
 
