@@ -1,6 +1,7 @@
 name: acceso a fortaleza
 
-on: push
+on: 
+    workflow_dispatch:
 
 jobs:
     reporte-de-reclutamiento:
