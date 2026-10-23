@@ -17,3 +17,10 @@ jobs:
                 echo "Acceso a la fortaleza registrado exitosamente"
             - name: Finalización del acceso
               run: echo "El proceso de acceso a la fortaleza ha finalizado"
+            - name: Desbloqueo de archivos en la fortaleza
+              uses: actions/checkout@v3
+            - name: Listar archivos desbloqueados
+              run: |
+                echo "Archivos en la fortaleza después del desbloqueo:"
+                ls -la
+                echo "Proceso de desbloqueo completado"
