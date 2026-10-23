@@ -2,7 +2,7 @@ name: acceso a fortaleza
 
 on: 
     workflow_dispatch:
-
+        
 jobs:
     reporte-de-reclutamiento:
         runs-on: ubuntu-latest

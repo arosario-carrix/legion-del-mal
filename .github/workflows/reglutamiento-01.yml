@@ -1,6 +1,7 @@
 name: reglutamiento de agente
 
-on: push
+on: 
+    workflow_dispatch:
 
 jobs:
     reporte-de-reclutamiento:
