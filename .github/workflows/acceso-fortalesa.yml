@@ -1,0 +1,19 @@
+name: acceso a fortaleza
+
+on: push
+
+jobs:
+    reporte-de-reclutamiento:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: El agente llega a la fortaleza
+              run: |
+                echo "Hola, he llegado a la fortaleza"
+                echo "Registrando acceso..."
+                echo "Nombre clave:" ${{github.actor}}
+                echo "buscar los archivos en la fortaleza..."
+                ls -la
+                echo "Acceso a la fortaleza registrado exitosamente"
+            - name: Finalización del acceso
+              run: echo "El proceso de acceso a la fortaleza ha finalizado"
